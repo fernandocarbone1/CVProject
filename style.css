@@ -1,0 +1,61 @@
+body {
+    font-family: 'Prata', serif;
+    font-size: 15px;
+}
+
+.headerCV {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 200px;
+    background-color: #FBF2E4;
+}
+
+.pairbox {
+    display: flex;
+    margin: 15px;
+}
+
+img {
+    border-radius: 360px;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+.contact {
+    display: flex;
+}
+
+h3{
+    color: #CA6D18
+}
+
+.photo_text {
+    display: block;
+    justify-items: center;
+    margin: 15px 70px;
+}
+
+li {
+    margin: 10px;
+}
+
+.pair_text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column_text {
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #FBF2E1;
+}
