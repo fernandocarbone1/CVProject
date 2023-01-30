@@ -2,7 +2,7 @@ window.onload = function() {
     document.getElementById("formContact").addEventListener('submit', function(event) {
         event.preventDefault()
     })
-}
+};
 
 // boolean variables
 
@@ -32,7 +32,7 @@ function fullNameInput(){
         document.getElementById('fullName').style.border = "3px solid green";
         inputA = true
     }
-}
+};
 
 function eMail(){
     var email = document.getElementById('email').value;
@@ -46,7 +46,7 @@ function eMail(){
         document.getElementById('email').style.border = '3px solid green';
         inputB = true
     }
-}
+};
 
 function messageInput() {
     var messageExt = document.getElementById('msg').value;
@@ -59,7 +59,7 @@ function messageInput() {
         document.getElementById('errorMsg').classList.remove("pMsg");
         inputC = false
     }
-}
+};
 
 //  Focus
 
@@ -67,19 +67,19 @@ function messageInput() {
 function verifyFullName(){
     document.getElementById('fullName').style.border = '3px solid blue'
     document.getElementById('errorName').classList.add('pName')
-}
+};
 
 // Email
 function verifyMail(){
     document.getElementById('email').style.border = '3px solid blue'
     document.getElementById('errorMail').classList.add('pMail')
-}
+};
 
 // Message
 function verifyMsg(){
     document.getElementById('msg').style.border = '3px solid blue'
     document.getElementById('errorMsg').classList.add('pMsg')
-}
+};
 
 // variables input
 
@@ -95,7 +95,7 @@ function confirmSubmit() {
             "\nYour email is: " + emailPrint.value +
             "\nYour message is: " + msgPrint.value
         )
-}
+};
 
 function confirm() {
     if (inputA === true && inputB === true && inputC === true) {
@@ -104,11 +104,9 @@ function confirm() {
     else {
         alert('Please, enter valid values')
     }
-}
+};
 
 // HandleOnSubmit
 function handleOnSubmit() {
     confirm();
-}
-
-console.log("funciona")
+};

@@ -26,6 +26,8 @@ body {
 }
 
 h3{
+    display: flex;
+    justify-content: center;
     color: #CA6D18
 }
 
@@ -57,9 +59,23 @@ li {
     color: red;
     font-size: 12px;
 }
-button {
+
+.input-name, .input-mail, .input-askbout, .element-pair {
     display: flex;
-    justify-items: end;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.element-pair {
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.contact_me {
+    background-color: #FBF2E1;
+    width: 100%;
 }
 
 footer {
@@ -68,7 +84,6 @@ footer {
     align-items: center;
     height: 100px;
     width: 100%;
-    background-color: #FBF2E1;
 }
 
 @media screen and (max-width: 760px){
