@@ -1,6 +1,7 @@
 body {
     font-family: 'Prata', serif;
     font-size: 15px;
+    margin: 0 15px;
 }
 
 .headerCV {
@@ -14,10 +15,6 @@ body {
 .pairbox {
     display: flex;
     margin: 15px;
-}
-
-img {
-    border-radius: 360px;
 }
 
 .logo {
@@ -52,10 +49,36 @@ li {
     width: 40%;
 }
 
+.pName, .pMail, .pMsg {
+    display: none;
+}
+
+#errorName, #errorMail, #errorMsg {
+    color: red;
+    font-size: 12px;
+}
+button {
+    display: flex;
+    justify-items: end;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    width: 100%;
     background-color: #FBF2E1;
+}
+
+@media screen and (max-width: 760px){
+    .headerCV {
+        display: inline;
+    }
+
+    .pair_text, .pairbox, h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

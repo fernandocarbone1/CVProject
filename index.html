@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src='index.js'></script>
         <title>CV</title>
     </head>
     <body>
@@ -77,10 +78,42 @@
                 </ul>
             </div>
         </div>
-        <footer>
-            <div>
-                <p>Copyright. All rights reserved</p>
-            </div>
-        </footer>
+        <div class="contact_me">
+            <h3>Contact me</h3>
+            <form id="formContact" action="/my-handling-form-page" onsubmit = handleOnSubmit()>
+                <div class="get-section01">
+                    <div class="input-name">
+                        <label for="name">
+                            Full Name:
+                        </label>
+                        <input id="fullName" class="input-height" type="text" placeholder="John Doe" onfocus="verifyFullName()" onblur="fullNameInput()">
+                        <p id="errorName" class="pName">Invalid value</p>
+                    </div>
+                    <div class="input-mail">
+                        <label for="mail">
+                            Email Adress:
+                        </label>
+                        <input id="email" class="input-height" id="mail" type="email" placeholder="johndoe@gmail.com" onfocus="verifyMail()" onblur="eMail()">
+                        <p id="errorMail" class="pMail">Invalid value</p>
+                    </div>
+                </div>
+                <div class="input-askbout">
+                    <label for="msg">
+                        Ask about me:
+                    </label>
+                    <textarea id="msg" name="user-message" onfocus="messageInput()" onblur="eMail()"></textarea>
+                    <p id="errorMsg" class="pMsg">You have to write something</p>
+                </div>
+                <div class="element-pair">
+                    <button class="submit">Send</button>
+                    <button class="reset">Reset</button>
+                </div>
+            </form>
+        </div>
     </body>
+    <footer>
+        <div>
+            <p>Copyright. All rights reserved</p>
+        </div>
+    </footer>
 </html>
